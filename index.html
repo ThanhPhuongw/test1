@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!-- Ngô Ngọc Thanh Phương _ B19DCCN511 -->
+<html>
+    <head>
+        <meta charset = "utf-8"><!-- comment -->
+        <title> Murach's Java Servlets and JPS </title>
+        <link rel="stylesheet" href ="styles/main.css" type="text/css"/>
+    </head>
+    <body>
+        <h1> Join our email list</h1><!-- comment -->
+        <p> To join our email list, enter your name and email address below. <p/><!-- comment -->
+        <form action ="emailList" method="post">
+            <input type="hidden" name="action" value="add"><!-- comment -->
+            
+            <label>Email: </label>
+            <input type="email" name="email" required><br><!-- comment -->
+            
+            <label>First Name: </label>
+            <input type="text" name="firstName" required><br><!-- comment -->
+            
+            <label>Last Name: </label>
+            <input type="text" name="lastName" required><br><!-- comment -->
+            
+            <p>Sex:</p>
+            <input type="radio" name="sex" value="Male">Male
+            <input type="radio" name="sex" value="Female" checked>Female<br>
+            <p>Qualifications:</p><br>
+            <select name="Qualifications">
+                <option value="Dai hoc">Đại học</option>
+                <option value="Cao dang">Cao đẳng</option><!-- comment -->
+                <option value="Trung cap">Trung cấp</option>
+            </select>
+            <label>&nbsp;</label><br>
+            <input type="submit" value="Join Now" id="submit">
+        </form>    
+    </body>
+</html>
